@@ -19,5 +19,5 @@ from restapi import views as restpaiview
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',restpaiview.home,name='home'),
-    path('restapi/task/string',restpaiview.taskstring,name='restapi_task_string')
+    path('restapi/task/string',restpaiview.taskstring,name='restapi_task_string'),
 ]
