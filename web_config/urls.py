@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from restapi import views as restpaiview
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',restpaiview.home,name='home'),
     path('restapi/task/string',restpaiview.taskstring,name='restapi_task_string'),
+    path('restapi/task/xml',restpaiview.taskxml,name='restapi_task_xml'),
+    path('restapi/task/json',restpaiview.taskjson,name='restapi_task_json'),
 ]
