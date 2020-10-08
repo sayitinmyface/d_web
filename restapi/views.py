@@ -26,7 +26,6 @@ def taskxml(request):
     return HttpResponse(result,content_type='text/xml')
 
 def taskjson(request):
-    
     result = {
                 'employees':[
                     {'firstname':'John','lastname':'Doe'},
